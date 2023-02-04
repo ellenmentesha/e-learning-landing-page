@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+
+/* ----------MAIN STYLES---------- */
+/* ----------MAIN STYLES---------- */
+
+.hero,
+.courses {
+    padding: 16px;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    color: #13183F;
+}
+
+a {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+button {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    border-radius: 1.7rem;
+    padding: 11px 24px;
+    border: none;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -------------HERO------------ */
+/* -------------HERO------------ */
+
+
+header button {
+    background: #13183F;
+}
+
+.hero-content {
+    margin-top: 2.5rem;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #13183F;
+}
+
+p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #83869A;
+}
+
+.hero-txt p {
+    margin: 1.5rem 0;
+}
+
+.hero-txt button {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 31.5px;
+    padding: 15px 28px;
+}
+
+.hero-images {
+    height: 400px;
+    background-image: url(assets/image-hero-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 3rem;
+}
+
+
+/* ----------------COURSES-------------- */
+/* ----------------COURSES-------------- */
+
+.courses {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    padding-bottom: 80px
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+}
+
+.cards-grid div {
+    background-color: white;
+    border-radius: 10px;
+    padding: 56px 22px 32px 22px;
+    position: relative;
+}
+
+.cards-grid div img {
+    position: absolute;
+    top: -10%;
+    left: 7%;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 1.3em;
+    line-height: 1.5rem;
+    color: #13183F;
+}
+
+.cards-grid div p {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cards-grid div a {
+    color: #F74780;
+}
+
+.cards-grid div:first-child {
+    padding-top: 1.5rem;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.cards-grid div:first-child p {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+
+
+/* --------FOOTER-------- */
+/* --------FOOTER-------- */
+
+footer {
+    background: #13183F;
+    padding: 2rem 1rem;
+}
+
+footer .logo {
+    color: white;
+}
+
+footer button {
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+}
+
+
+
+/* -----------MEDIA------------ */
+/* -----------MEDIA------------ */
+
+
+/* -------TABLET-SIZES--------- */
+/* -------TABLET-SIZES--------- */
+
+@media (min-width:768px) {
+
+    .hero {
+        padding: 31px 40px 200px 40px;
+    }
+
+    .courses {
+        padding: 0 40px 86px 40px;
+    }
+
+    .hero-images {
+        display: none;
+    }
+
+    .container {
+        background-image: url(assets/image-hero-tablet.png);
+        background-repeat: no-repeat;
+        background-position-x: calc(100% + 300px);
+        background-position-y: -92px;
+    }
+
+    /* ---------Hero------ */
+
+    .hero-txt {
+        width: min(470px, 55%);
+    }
+
+    .hero-content {
+        margin-top: 105px;
+    }
+
+    /* --------COURSES------ */
+    .cards-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 56px;
+        column-gap: 10px;
+    }
+
+    .cards-grid div:first-child {
+        padding-top: 56px;
+    }
+}
+
+
+@media (min-width:1280px) {
+    .container {
+        background-image: url(assets/image-hero-desktop.png);
+        background-position-x: calc(100% + 320px);
+        background-position-y: -131px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .hero {
+        padding: 31px 165px 250px 165px;
+    }
+
+    .courses {
+        padding: 0 165px 140px 165px;
+    }
+
+    /* ---------HERO------  */
+
+    .hero-content {
+        margin-top: 180px;
+    }
+
+    .logo {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .hero-txt p {
+        margin-top: 1.8rem;
+        margin-bottom: 2.5rem;
+    }
+
+    h1 {
+        font-size: 56px;
+        line-height: 71px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    a {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    button {
+        padding: 14px 32px;
+    }
+
+    .hero-txt button {
+        padding: 16px 32px 16px 32px;
+    }
+
+    /* --------COURSES--------- */
+
+    .cards-grid {
+        row-gap: 80px;
+        column-gap: 30px;
+    }
+
+    .cards-grid div {
+        padding: 64px 32px 40px 32px;
+    }
+
+    .cards-grid div:first-child p {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .cards-grid div:nth-child(3) p,
+    .cards-grid div:nth-child(4) p {
+        margin-bottom: 52px;
+    }
+}
+
+
+@media (min-width:1360px) {
+    .container {
+        background-position-x: calc(100% + 330px);
+        background-position-y: -139px;
+    }
+}
